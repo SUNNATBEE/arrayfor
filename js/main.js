@@ -28,24 +28,29 @@ elForm.addEventListener("submit" , function(evt){
         text.style.fontWeight = "900"
         text.style.color = "yellow";
         text.textContent = array[i].userName
+        text.style.transition = "all 2s"
+        text.classList.add("animate-charcter");
         item.appendChild(text);
         
         const family = document.createElement("p");
         family.textContent = array[i].qarinsdosh;
         family.style.fontWeight = "700"
-        family.style.color = "yellow";
+        // family.style.color = "yellow";
+        family.classList.add("waviy");
         item.appendChild(family);
         
         const number = document.createElement("a");
         number.setAttribute("href", `tel:+${array[i].phoneNumber}`)
         number.textContent = array[i].phoneNumber;
         number.classList.add("phones")
+        number.classList.add("pop-outin");
         item.appendChild(number);
         item.classList.add("wrapper-item");
         
         const deletebtn = document.createElement("button");
         deletebtn.classList.add("btn", "btn-danger" , "d-block", "mx-auto");
         deletebtn.textContent = "Delete"
+        deletebtn.classList.add("text_shadows");
         item.appendChild(deletebtn);
         elList.appendChild(item);
 
@@ -53,10 +58,10 @@ elForm.addEventListener("submit" , function(evt){
                 item.style.display = "none";
                 array.length = 0;
         })
-        
-        
     }
 })
+
+
 
 
 
