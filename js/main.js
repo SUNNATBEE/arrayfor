@@ -48,13 +48,15 @@ elForm.addEventListener("submit" , function(evt){
         deletebtn.textContent = "Delete"
         item.appendChild(deletebtn);
         elList.appendChild(item);
-        
+
         deletebtn.addEventListener("click" , function(){
-                item.style.display = "none"
+      
+                item.style.display = "none";
+                array.length = 0;
             
         })
         
-    
+        
     }
 })
 
