@@ -10,7 +10,7 @@
     
     <!-- <link rel="stylesheet" href="./css/main.min.css"> -->
 </head>
-<body class="bg-info">
+<body class="bg-dark">
     
     <!-- Header start -->
     <header class="site-header">
@@ -23,37 +23,51 @@
         <!-- Hero section start  -->
         <section class="hero-section">
             <div class="container">
-                <div class="wrapper-title bg-black w-50 py-3 mx-auto mb-5 mt-5 ">
-                    <h2 class="text-center text-white">
-                        Contact book
-                    </h2>
+                <div class="wrapper-title  py-3 mx-auto  mt-5 w-100">
+                    <svg viewBox="0 0 960 300">
+                        <symbol id="s-text">
+                            <text text-anchor="middle" x="50%" y="80%">Contact Book </text>
+                            <!-- <text text-anchor="middle" x="52%" y="80%">Conatact book</text> -->
+                            
+                        </symbol>
+                        
+                        <g class = "g-ants">
+                            <use xlink:href="#s-text" class="text-copy"></use>
+                            <use xlink:href="#s-text" class="text-copy"></use>
+                            <use xlink:href="#s-text" class="text-copy"></use>
+                            <use xlink:href="#s-text" class="text-copy"></use>
+                            <use xlink:href="#s-text" class="text-copy"></use>
+                        </g>
+                    </svg>
                 </div>
                 <div class="row">
                     <div class="col-12 col-md-6">
                         <form method="post" class="forms" autocomplete="off">
-                            <h2 class="inputs-title bg-success text-center py-1 rounded-3 fw-bolder animate-charcter">
+                            <h2 class="inputs-title bg-success text-center py-1 rounded-3 fw-bolder  pop-outin">
                                 New Contact Form
                             </h2>
-                            <input class="input-name form-control mb-3 w-100" type="text" placeholder="Enter your name" minlength="3" required>
-                            <input class="input-realtionship form-control mb-3 w-100" list="datalistOptions" id="exampleDataList" placeholder="Family">
+                            <input class="input-name form-control mb-3 w-100 animate-charcter" type="text" placeholder="Enter your name" minlength="3" required>
+                            <input class="input-realtionship form-control mb-3 w-100  animate-charcter" list="datalistOptions" id="exampleDataList" placeholder="Family">
                             <datalist id="datalistOptions">
                                 <option value="Father"></option>
                                 <option value="Mother"></option>
                                 <option value="Sister"></option>
                                 <option value="Brother"></option>
                             </datalist>      
-                            <input class="input-phone form-control w-100 mb-4" type="number" placeholder="Enter your phone number"  required>
+                            <input class="input-phone form-control w-100 mb-4 animate-charcter" type="number" placeholder="Enter your phone number"  required>
                             <button class="btn btn-success mx-auto d-block d-md-inline mb-5 text_shadows" type="submit">
                                 add to contact
                             </button>
                         </form> 
                     </div>
-                    <div class="col-12 col-md-6">
-                        <h2 class="bottom-title text-center mb-3">
-                            Contact
-                        </h2>
+                    <div class="col-12 col-md-6 d-flex justify-content-end">
+                        <div class="content text-center mx-auto" >
+                            <h2>Contact</h2>
+                            <h2>contact</h2>
+
+                        </div>
                         <ul class="list list-unstyled" >
-    
+                            
                         </ul>
                     </div>
                 </div>
