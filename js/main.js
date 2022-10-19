@@ -50,10 +50,8 @@ elForm.addEventListener("submit" , function(evt){
         elList.appendChild(item);
 
         deletebtn.addEventListener("click" , function(){
-      
                 item.style.display = "none";
                 array.length = 0;
-            
         })
         
         
