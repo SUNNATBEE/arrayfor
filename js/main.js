@@ -22,6 +22,8 @@ elForm.addEventListener("submit" , function(evt){
     elList.textContent = ""
     for(let i = 0; i < array.length; i++){
         const item = document.createElement("li");
+        item.setAttribute("class", "item");
+        item.style.display = "block"
         const text = document.createElement("h2");
         text.style.fontWeight = "900"
         text.style.color = "yellow";
@@ -40,15 +42,23 @@ elForm.addEventListener("submit" , function(evt){
         number.classList.add("phones")
         item.appendChild(number);
         item.classList.add("wrapper-item");
-
+        
         const deletebtn = document.createElement("button");
         deletebtn.classList.add("btn", "btn-danger" , "d-block", "mx-auto");
         deletebtn.textContent = "Delete"
         item.appendChild(deletebtn);
         elList.appendChild(item);
+        
+        deletebtn.addEventListener("click" , function(){
+                item.style.display = "none"
+            
+        })
+        
+    
     }
 })
- 
+
+
 
 
 
